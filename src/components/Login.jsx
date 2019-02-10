@@ -1,13 +1,15 @@
 import React from "react";
 
+
+
 const Login = props => {
   return (
-    <div>
+    <div  className="content">
       <h1>Login</h1>
       <form onSubmit={props.handleSubmit}>
         {props.renderInput("email", "Email")}
         {props.renderInput("password", "Password", "password")}
-        <button className="btn btn-primary"> Login </button>
+        <button> Login </button>
       </form>
     </div>
   );

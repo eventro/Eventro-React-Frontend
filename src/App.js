@@ -48,7 +48,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id="large-header" className="large-header">
         <NavBar
           user={this.state.user}
           changeForm={this.changeForm}

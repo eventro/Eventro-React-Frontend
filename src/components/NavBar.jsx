@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = ({ user, changeForm, logout, getProducts }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="navbar-brand">Navbar</div>
+      <div className="navbar-brand"><img src="https://i.imgur.com/LXlD7cV.png"/></div>
       <button
         className="navbar-toggler"
         type="button"

@@ -4,41 +4,42 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
+  background: rgba(22,22,22, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  
+} 
 
-
+/* 
 .event-form{
-  background-color: white;
+  background-color: #f6f6f6;
   padding: 50px;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 500px;
-}
+} */
 
-label{
+/* label{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.event-form input{
+/* .event-form input{
   width: 350px;
   margin: 5px 0 10px 10px;
   font-size: 1em;
-}
+} */
 
-.event-form button{
+/* .event-form button{
   font-size: 1em;
   padding: 7px;
   margin-top: 20px;
   background-color:  rgb(93, 228, 154);
-  color: white;
-}
+  color: #f6f6f6;
+} */
 
 .close-modal{
   position: absolute;
@@ -48,33 +49,33 @@ label{
   font-size: 1.5em;
 }
 
-header{
+/* header{
   padding: 10px;
   color:  rgb(228, 93, 93);
   font-size: 2em;
   margin-bottom: 30px;
   background-color: rgb(210, 238, 224);
-}
-
+} */
+/* 
 .event-buttons button:first-of-type{
   background-color: rgb(210, 238, 224);
-}
-
+} */
+/* 
 .event-buttons button:nth-of-type(2){
   background-color: rgb(93, 228, 154);
-  color: white;
-}
+  color: #f6f6f6;
+} */
 
-button:hover{
+/* button:hover{
   cursor: pointer;
-}
+} */
 
-.event-views{
+/* .event-views{
   display:flex;
 padding-left: 150px
 
-}
-
+} */
+/* 
 .event-view{
   width: 250px;
   height: 200px;
@@ -83,18 +84,18 @@ padding-left: 150px
   flex-wrap:  wrap;
   margin: 10px 20px;
   justify-content: space-between;
-  /* background-color:  rgb(247, 238, 238); */
+  background-color:  rgb(247, 238, 238);
   cursor: pointer;
   position: relative;
   margin:10px;
   padding:10px
-}
-
-.event-view >img{
-  opacity: 0.3;
+}  */
+/* 
+ .event-view >img{
+  opacity: 0.3;  
   padding-left: 50px;
-}
-
+} */
+/* 
 .event-date{
   transform: rotate(-90deg);
   position: absolute;
@@ -102,12 +103,124 @@ padding-left: 150px
   font-weight: bolder;
   font-size: 20px;
   color:#c6a632
-}
+} */
 
-.event-name{
+/* .event-name{
   background-color: #8fa39a;
   position: absolute;
   width:35%;
   top:50px;
   padding:10px
+} */  
+
+/* web sign up and sign in */
+body {
+  /* filter: grayscale(50%); */
+  background: url(https://im.ezgif.com/tmp/ezgif-1-096da82ad5da.png) repeat-x ;
+
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto; */
+/* background-position: bottom; */
+/* background-position: bottom 0% right 100px; */
+background-position: bottom center ;
+  min-height: 100vh;
+}
+
+.content {
+  margin:50%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 40px auto;
+  background: rgba(22,22,22, 0.5);
+  width: 40%;
+  min-height: 50%;;
+  max-width: 960px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  /* margin-bottom: 5%; */
+  
+
+}
+
+h1, h1 a {
+  min-height: 120px;
+  width: 90%;
+  max-width: 700px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 80px;
+}
+
+
+p {
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+form{
+  padding: 5% 20%;
+}
+
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+#organizer{
+text-align: center;
+font-size:25px;
+font-weight: bold;
+
+}
+
+#cen{
+  text-align:center;
 }

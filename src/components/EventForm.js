@@ -35,18 +35,29 @@ class EventForm extends Component {
   
   render(){
     return(
-      <div className="modall">
-        <form className="event-form" onSubmit={this.handleSubmit.bind(this)}>
+      <div  className="modall">
+      <div className="content">
+
           <div className="close-modal" onClick={()=>{this.props.toggleModal()}}>x</div>
-          <TextField  name='name'  label="Name" type="text" value={this.state.name}  onChange={this.handleChange.bind(this)} />
-          <TextField  name='description'  label="Description" type="text" value={this.state.description}  onChange={this.handleChange.bind(this)} />
-          <TextField  name='start_date'  label="Start Date" type="date" value={this.state.start_date}  onChange={this.handleChange.bind(this)}    />
-          <TextField  name='end_date'  label="End Date" type="date" value={this.state.end_date}  onChange={this.handleChange.bind(this)}    />
-          <TextField  name='location'  label="Location" type="text" value={this.state.location}  onChange={this.handleChange.bind(this)} />
-          <TextField  name='location_id'  label="Location Id" type="text" value={this.state.location_id}  onChange={this.handleChange.bind(this)} />
-          <TextField  name='logo'  label="Logo" type="text" value={this.state.logo}  onChange={this.handleChange.bind(this)} />
+      <h1>Event</h1>
+        <form  onSubmit={this.handleSubmit.bind(this)}>
+          Event Name :
+          <br></br><input  name='name'  label="Name" type="text" value={this.state.name}  onChange={this.handleChange.bind(this)} /><br></br>
+          Description :
+          <br></br><input  name='description'  label="Description" type="text" value={this.state.description}  onChange={this.handleChange.bind(this)} /><br></br>
+          Start date:
+          <br></br><input  name='start_date'  label="Start Date" type="date" value={this.state.start_date}  onChange={this.handleChange.bind(this)}    /><br></br>
+          End date :
+          <br></br><input  name='end_date'  label="End Date" type="date" value={this.state.end_date}  onChange={this.handleChange.bind(this)}    /><br></br>
+          Location :
+          <br></br><input  name='location'  label="Location" type="text" value={this.state.location}  onChange={this.handleChange.bind(this)} /><br></br>
+          {/* <input  name='location_id'  label="Location Id" type="text" value={this.state.location_id}  onChange={this.handleChange.bind(this)} /><br></br> */}
+          Logo : 
+          <br></br><input  name='logo'  label="Logo" type="text" value={this.state.logo}  onChange={this.handleChange.bind(this)} /><br></br>
+        <br></br>
           <button>Submit</button>
         </form>
+      </div>
         
       </div>
     )
