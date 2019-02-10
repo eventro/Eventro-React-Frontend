@@ -3,7 +3,6 @@ import { getToken } from "../services/authService";
 import Event from './Event';
 import ShowEvent from './ShowEvent';
 import EventForm from '././EventForm';
-import TextField from '@material-ui/core/TextField';
 
 class Organizer extends Component {
   constructor() {
@@ -199,7 +198,9 @@ class Organizer extends Component {
         else
        return( 
            <div>
-           <div onClick={this.toggleModal.bind(this)}>+</div>
+             <br></br>
+             <button onClick={this.toggleModal.bind(this)}>Add Event</button>
+           {/* <div onClick={this.toggleModal.bind(this)}>+</div> */}
            <div className="event-views"> {this.renderEvents(this.state.events)} </div>
            </div>)
       }
@@ -207,7 +208,8 @@ class Organizer extends Component {
 
   render() {
     return (
-      <div>
+      <div id="organizer">
+
         Hello {this.props.user.name}
 
 {this.renderContent()}
